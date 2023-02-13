@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -alR | grep ^d | wc -l
