@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -w Suetonius iacta
+grep -w Alea iacta | head -n 2 | tail -n 1
