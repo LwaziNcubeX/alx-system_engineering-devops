@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
-# but for the 9th iteration, displays Best School
-# and then Hi on a new line.
 n=1
 while [ $n -le 10 ]; do
 	if ((n == 9)); then
