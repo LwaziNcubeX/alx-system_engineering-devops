@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays the content of the current directory
+for file in *
+do
+	if [[ ! $file == .* ]]; then
+		new_file_name=$(echo "$file" | cut -d'-' -f2-)
+		echo "$new_file_name"
+	fi
+done
