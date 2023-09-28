@@ -11,4 +11,5 @@ do
 		echo "Best School"
 	fi
 	((n++))
-done	
+done
+
