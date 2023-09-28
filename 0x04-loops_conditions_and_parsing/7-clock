@@ -1,50 +1,17 @@
 #!/usr/bin/env bash
 # Display the time for 12 hours and 59 minutes
-n=0
-while [ $n -le 779 ]
+hour=0
+
+while [ $hour -le 12 ]
 do
-	case $n in
-		0)
-			echo "Hour: 0"
-			;;
-		60)
-			echo "Hour: 1"
-			;;
-		120)
-			echo "Hour: 2"
-			;;
-		180)
-			echo "Hour: 3"
-			;;
-		240)
-			echo "Hour: 4"
-			;;
-		300)
-			echo "Hour: 5"
-			;;
-		360)
-			echo "Hour: 6"
-			;;
-		420)
-			echo "Hour: 7"
-			;;
-		480)
-			echo "Hour: 8"
-			;;
-		540)
-			echo "Hour: 9"
-			;;
-		600)
-			echo "Hour: 10"
-			;;
-		660)
-			echo "Hour: 11"
-			;;
-		720)
-			echo "Hour: 12"
-			;;
-		*)
-			echo $n
-	esac
-	n=$((n+1))
+	echo "Hour: $hour"
+	
+	minute=1
+	
+	while [ $minute -le 59 ]
+	do
+		echo $minute
+		minute=$((minute+1))
+	done
+	hour=$((hour+1))
 done
