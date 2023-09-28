@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 n=1
-while [ $n -lt 10 ]; do
-	if [[ $n -eq 9 ]]
+while [ $n -lt 10 ]
+do
+	if [ $n -eq 8 ]
 	then
-		echo Hi
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
 	fi
-	echo Best School
-	n=$((n+1))
-done
+	((n++))
+done	
