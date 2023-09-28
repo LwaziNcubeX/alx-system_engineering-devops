@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 9 times
-n=1
-while [ $n -le 10 ]; do
-	if [ $n == 9 ]; then
+count=1
+
+while [ $count -le 10 ]
+do
+	if [ $count -eq 9 ]
+	then
+		echo "Best School"
 		echo "Hi"
 	else
 		echo "Best School"
 	fi
-	n=$((n+1))
+	count=$((count+1))
 done
