@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A Bash script that sends a signal message to a running process
+pid=$(pgrep -f 7-highlander)
+if [ -n "$pid" ]; then
+  kill -s SIGTERM "$pid"
+fi
