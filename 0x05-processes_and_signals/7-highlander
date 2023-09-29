@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# A Bash script that displays To infinity and beyond indefinitely.
+function handle_signal {
+  echo "I am invincible!!!"
+}
+
+trap handle_signal SIGTERM
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
