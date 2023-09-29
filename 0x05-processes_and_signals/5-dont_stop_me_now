@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A Bash script that kill an infinity loop
+kill -9 $(pgrep -f 4-to_infinity_and_beyond)
