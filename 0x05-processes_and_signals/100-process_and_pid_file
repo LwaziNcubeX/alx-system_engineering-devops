@@ -1,22 +1,28 @@
 #!/usr/bin/env bash
 # A bash script that recieves signals
-pidfile="myscript.pid"
+pidfile="/var/run/myscript.pid"
 echo $$ > "$pidfile"
 
 trap 'cleanup' SIGTERM
 
 cleanup() {
-    echo "I hate the kill command"
-    rm "$pidfile"
-    exit 0
+	echo "I hate the kill command"
+	rm "$pidfile"
+	exit 0
 }
 
 trap 'cleanup2' SIGINT
 
 cleanup2() {
-    echo "Y U no love me?!"
-    rm "$pidfile"
-    exit 0
+	echo "Y U no love me?!"
+	exit 0
+}
+
+trap 'cleanup3' SIGQUIT
+
+cleanup2() {
+	rm "$pidfile"
+	exit 0
 }
 
 while true
