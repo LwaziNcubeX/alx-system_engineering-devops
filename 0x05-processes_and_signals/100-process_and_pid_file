@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# A bash script that recieves signals
+pidfile="myscript.pid"
+echo $$ > "$pidfile"
+
+trap 'cleanup' SIGTERM
+
+cleanup() {
+    echo "I hate the kill command"
+    rm "$pidfile"
+    exit 0
+}
+
+trap 'cleanup2' SIGINT
+
+cleanup2() {
+    echo "Y U no love me?!"
+    rm "$pidfile"
+    exit 0
+}
+
+while true
+do
+	echo "To infinity and beyond"
+done
