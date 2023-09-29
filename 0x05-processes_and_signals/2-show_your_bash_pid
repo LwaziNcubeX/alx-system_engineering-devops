@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A bash script that shows your bash PID
+# shellcheck disable=SC2009
+ps --forest aux | grep bash | tail -n +2
