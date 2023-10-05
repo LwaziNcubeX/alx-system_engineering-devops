@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# change ip of any ubuntu server
+echo "127.0.0.2    localhost" | sudo tee /etc/hosts > /dev/null
+echo "8.8.8.8      facebook.com" | sudo tee -a /etc/hosts > /dev/null
+
+sudo service networking restart
