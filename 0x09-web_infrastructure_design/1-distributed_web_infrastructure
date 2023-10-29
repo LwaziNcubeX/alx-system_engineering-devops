@@ -17,3 +17,6 @@ There are some issues with our infrastructure that we need to address:
 - We have a SPOF problem with our load balancer since there are no backup mechanisms in place.
 - There are security issues, such as a lack of HTTPS and firewalls, which need to be set up to protect the website and its data.
 - We currently lack a monitoring system, which makes it difficult to track system performance, reliability, and security.
+
+
+https://github.com/LwaziNcubeX/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/1-distributed_web_infrastructure.png

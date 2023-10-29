@@ -37,3 +37,6 @@ Issues:
         Server, web server, or application server maintenance may cause downtime (temporary unavailability of website services), often due to the need for a server restart after software updates or patches.
 - Limited Scalability:
         The current infrastructure may not support sudden traffic spikes or high traffic volume. It is not enough to host the website if there are too many incoming requests.
+
+
+https://github.com/LwaziNcubeX/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.png

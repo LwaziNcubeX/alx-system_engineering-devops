@@ -9,3 +9,6 @@ Here's why we added each additional element:
 - We split the components (web server, application server, and database) onto their own servers because it allows us to scale each component independently based on the website's requirements. This architecture provides greater flexibility, better performance, and improved security.
 
 With this infrastructure, we can easily add more servers to handle the increasing workload without having to add all the components (web server, application server, and database) to each new server. We only need to add the component(s) that lack the necessary resources.
+
+
+https://github.com/LwaziNcubeX/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/3-scale_up.png
