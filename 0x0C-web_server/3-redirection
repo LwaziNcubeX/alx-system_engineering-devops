@@ -15,8 +15,12 @@ server {
     server_name _;
 
     location / {
-    	add_header Content-Type text/plain;
+        add_header Content-Type text/plain;
         return 200 'Hello World!\n';
+    }
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
 }
 " | sudo tee /etc/nginx/sites-available/default > /dev/null
@@ -30,4 +34,4 @@ sudo sed -i '/location \/ {/a \
 ' /etc/nginx/sites-available/default
 
 # Restart Nginx
-sudo /etc/init.d/nginx restart # or use sudo service nginx restart
+sudo service nginx restart
