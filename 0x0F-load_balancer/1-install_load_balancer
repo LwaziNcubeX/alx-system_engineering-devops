@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
+
+# Update and install HAProxy
 sudo apt update
 sudo apt install -y haproxy
 
 # Configure HAProxy
-sudo echo "
+sudo tee /etc/haproxy/haproxy.cfg > /dev/null <<EOF
 global
-    # add settings
+    # Add any global settings here
 
 defaults
     mode http
@@ -24,9 +26,9 @@ backend servers
     balance roundrobin
     server 234037-web-01 100.26.170.206:80 check
     server 234037-web-02 34.202.159.66:80 check
-" | sudo tee /etc/haproxy/haproxy.cfg
+EOF
 
-
+# Enable and start HAProxy service
 sudo systemctl enable haproxy
 sudo systemctl start haproxy
 
