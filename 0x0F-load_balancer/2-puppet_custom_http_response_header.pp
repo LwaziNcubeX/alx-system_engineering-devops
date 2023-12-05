@@ -13,7 +13,7 @@ file_line { 'add X-Served-By header':
   ensure => 'present',
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;',
-  line   => "    add_header X-Served-By $hostname;",
+  line   => "    add_header X-Served-By ${hostname};",
 }
 
 exec {'start':
