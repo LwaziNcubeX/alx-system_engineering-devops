@@ -24,11 +24,10 @@ frontend app
 backend servers
     mode http
     balance roundrobin
-    server 234037-web-01 100.26.170.206:80 check
-    server 234037-web-02 34.202.159.66:80 check
+    server web-01 100.26.170.206:80 check
+    server web-02 34.202.159.66:80 check
 EOF
 
 # Enable and start HAProxy service
 sudo systemctl enable haproxy
 sudo systemctl start haproxy
-
