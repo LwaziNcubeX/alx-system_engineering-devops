@@ -26,12 +26,11 @@ server {
 " | sudo tee /etc/nginx/sites-available/default > /dev/null
 
 # Use sed to replace the line with a redirection configuration block
-sudo sed -i '/location \/ {/a \
-\
+sudo sed -i "/location \/ {/a \
     location \/redirect_me { \
         return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4; \
-    } \
-' /etc/nginx/sites-available/default
+    }" /etc/nginx/sites-available/default
+
 
 # Restart Nginx
 sudo service nginx restart
