@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Run Nginx as Nginx
+# Create a new user "nginx" if it doesn't exist
+if ! id -u nginx >/dev/null 2>&1; then
+    adduser --system --no-create-home --disabled-login --disabled-password --group nginx
+fi
+
+# Update Nginx config
+sed -i 's/user\s*[^;]*;/user nginx;/g' /etc/nginx/nginx.conf
+sed -i 's/listen\s*[^;]*;/listen 8080;/g' /etc/nginx/nginx.conf
+
+service nginx restart
