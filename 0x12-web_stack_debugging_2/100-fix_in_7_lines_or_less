@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# short and sweet
+su "$1" -u whoami
