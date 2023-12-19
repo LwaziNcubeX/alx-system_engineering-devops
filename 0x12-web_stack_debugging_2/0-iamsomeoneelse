@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#WHO AM I
+su - "$1" -c "whoami"
