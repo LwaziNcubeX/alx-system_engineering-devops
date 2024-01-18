@@ -17,7 +17,7 @@ exec { 'reload_environment':
 
 # Restart Apache service
 service { 'apache2':
-  ensure     => running,
+  ensure    => running,
   subscribe => Exec['reload_environment'],
 }
 
