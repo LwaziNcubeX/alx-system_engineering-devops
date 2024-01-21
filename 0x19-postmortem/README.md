@@ -1,5 +1,5 @@
 # 0x19. Postmortem
-![IMAGE](https://github.com/LwaziNcubeX/10KBS/blob/main/d.jpg?raw=true)
+![IMAGE](https://telegra.ph/file/4fa5489ef42aca17344d8.gif?raw=true)
 ### Issue Summary:
 
 Duration: January 19, 2024, 10:00 AM - 1:00 PM (UTC)
