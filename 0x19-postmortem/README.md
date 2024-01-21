@@ -4,7 +4,7 @@
 
 Duration: January 19, 2024, 10:00 AM - 1:00 PM (CAT)
 
-**Impact:** AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 25% of customers were affected during this incident.
+**Impact:** AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 36% of customers were affected during this incident.
 
 ## Timeline:
 
