@@ -38,8 +38,10 @@ Implemented additional safeguards in the billing algorithm to detect and prevent
 **Tasks to Address the Issue:**
 
 **Short-Term:**
-Issued prompt refunds or credits to affected customers and communicated transparently about the billing error.
-developed.
+We issued refunds to affected customers and explained what caused the billing errors.
+Double checked if any there are any miscalculation that were missed.
 
 **Long-Term:** Regular code reviewes and testing,
-code scanning to check for any outdated dependacies, Added a github workflows.
+Implement regular code scanning to identify any outdated dependencies.
+
+Maintain a comprehensive code documentation for any updates or changes made.
