@@ -2,8 +2,9 @@
 ![IMAGE](https://telegra.ph/file/4fa5489ef42aca17344d8.gif?raw=true)
 ### Issue Summary:
 
-Duration: January 19, 2024, 10:00 AM - 1:00 PM (UTC)
-Impact: AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 25% of customers were affected during this incident.
+Duration: January 19, 2024, 10:00 AM - 1:00 PM (CAT)
+
+**Impact:** AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 25% of customers were affected during this incident.
 
 ## Timeline:
 
