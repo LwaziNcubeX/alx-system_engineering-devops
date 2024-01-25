@@ -1,9 +1,10 @@
 # 0x19. Postmortem
-
+![IMAGE](https://telegra.ph/file/4fa5489ef42aca17344d8.gif?raw=true)
 ### Issue Summary:
 
-Duration: January 19, 2024, 10:00 AM - 1:00 PM (UTC)
-Impact: AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 25% of customers were affected during this incident.
+Duration: January 19, 2024, 10:00 AM - 1:00 PM (CAT)
+
+**Impact:** AquaBills, our water billing system, experienced an unexpected glitch, resulting in overcharging customers. Approximately 36% of customers were affected during this incident.
 
 ## Timeline:
 
@@ -37,8 +38,10 @@ Implemented additional safeguards in the billing algorithm to detect and prevent
 **Tasks to Address the Issue:**
 
 **Short-Term:**
-Issued prompt refunds or credits to affected customers and communicated transparently about the billing error.
-developed.
+We issued refunds to affected customers and explained what caused the billing errors.
+Double checked if any there are any miscalculation that were missed.
 
 **Long-Term:** Regular code reviewes and testing,
-code scanning to check for any outdated dependacies, Added a github workflows.
+Implement regular code scanning to identify any outdated dependencies.
+
+Maintain a comprehensive code documentation for any updates or changes made.
