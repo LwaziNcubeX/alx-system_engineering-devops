@@ -1,0 +1,26 @@
+# configure Nginx to serve your page from the route /airbnb-onepage/
+
+server {
+    listen 80;
+    server_name 127.0.0.1 100.26.170.206;
+
+    location /airbnb-onepage/ {
+        proxy_pass http://localhost:5000;
+    }
+
+    location /airbnb-dynamic/number_odd_or_even/ {
+        proxy_pass http://localhost:5001;
+    }
+
+    error_page 404 /404.html;
+    location = /404.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+}
